@@ -5,6 +5,9 @@ This scipts create `docker-proxy` container from image [jwilder/nginx-proxy](htt
 ## Usage
 
 ```bash
+$ cd ..
+$ git clone https://github.com/attract/docker-proxy.git
+$ cd docker-proxy
 $ nginx-proxy.sh
 ```
 
@@ -12,10 +15,13 @@ This scipts create `docker-proxy` container.
 
 
 ```bash
+$ cd ..
+$ git clone https://github.com/attract/docker-proxy.git
+$ cd docker-proxy
 $ nginx-proxy-bridge-overlay.sh
 ```
 
-This scipt will create `docker-proxy` container and docker networks `bridge` and `overlay` mode.
+This script will create `docker-proxy` container and docker networks `bridge` and `overlay` mode.
 
 Now you can connect your stack in compose file to docker-proxy-overlay network:
 
